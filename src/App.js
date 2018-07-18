@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Counter from './component/Counter'
+import Counters from './component/CouterGroup'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header logo={logo} />
-        <Counter />
+        <Counters number={2} />
       </div>
     );
   }
